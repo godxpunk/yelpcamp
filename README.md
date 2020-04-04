@@ -1,4 +1,10 @@
 <h1>YelpCamp </h1>
+
+Yelpcamp is fully functional NodeJs web app.
+
+This is a camping ground website developed during a code-along while following the-web-developer-bootcamp.
+With yelpcamp, one can create and view data related to botcamps you know, including a picture of the bootcamp.
+
 <h2>Built With</h2>
 
 - [Node.js](https://nodejs.org) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
