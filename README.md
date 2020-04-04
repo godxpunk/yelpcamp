@@ -1,5 +1,5 @@
 <h2>
-<a href="https://yelpcamp-anand.herokuapp.com"> View YelpCamp App </>
+<a href="https://yelpcamp-anand.herokuapp.com"> View YelpCamp App </a>
 </h2>
 
 Yelpcamp is fully functional NodeJs web app.
