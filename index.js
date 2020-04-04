@@ -18,11 +18,11 @@ var commentRoutes = require("./routes/comments"),
 	indexRoutes = require("./routes/index");
 
 var port = process.env.PORT || 3000;
+var databaseUrl = process.env.databaseUrl || "mongodb://localhost:27017/yelp_camp";
 
 //seedDB; // seed the database
-//mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect("mongodb+srv://godxpunk:NEphilem12@cluster0-zxnej.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
-mongoose.set('useUnifiedTopology', true);
+mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+//mongoose.set('useUnifiedTopology', true);
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("express"));
