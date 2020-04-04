@@ -2,7 +2,7 @@
 <a href="https://yelpcamp-anand.herokuapp.com"> View YelpCamp App </a>
 </h2>
 
-Yelpcamp is fully functional NodeJs web app.
+Yelpcamp is a fully functional Node.js web app. 
 
 This is a camping ground website which lists the different campgrounds all over the world.
 With yelpcamp, one can create and view data related to campgrounds.
