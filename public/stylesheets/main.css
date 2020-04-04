@@ -10,3 +10,7 @@
 #delete-camp-form {
 	display: inline;
 }
+
+.navbar-link:hover {
+	text-decoration: none;
+}
