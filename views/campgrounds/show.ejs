@@ -11,7 +11,6 @@
 				<li class="list-group-item">Info 2</li>
 				<li class="list-group-item">Info 3</li>
 			</div>
-			//map here
 		</div>
 		<div class="col-md-9">
 			<div class="thumbnail">
@@ -25,7 +24,7 @@
 					</h4>
 					<p><%=campground.description%></p>
 					<p>
-						<em>Submitted by <%=campground.author.username%></em>
+						<em>Submitted by <%=campground.author.username%>, <%= moment(campground.createdAt).fromNow() %></em>
 					</p>
 					<% if(currentUser && campground.author.id.equals(currentUser._id)){ %>
 						<a href="/campgrounds/<%=campground._id%>/edit" class="btn btn-xs btn-warning">Edit</a>
@@ -46,7 +45,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<strong><%= comment.author.username %></strong>
-							<span class="pull-right">10 days ago</span>
+							<span class="pull-right"><%= moment(comment.createdAt).fromNow() %></span>
 							<p>
 								<%= comment.text %>
 							</p>

@@ -35,10 +35,12 @@ router.get("/login",(req,res)=>{
 
 //handle login logic
 router.post("/login",passport.authenticate("local",
-										{
-											successRedirect:"/campgrounds",
-											failureRedirect:"/login"
-										}),(req,res)=>{
+{
+	successRedirect:"/campgrounds",
+	failureRedirect:"/login",
+    failureFlash: true,
+	successFlash: 'Welcome to YelpCamp!'
+		}),(req,res)=>{
 })
 
 //logout route

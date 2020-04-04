@@ -50,10 +50,10 @@ router.get("/:id",(req,res)=>{
 	var id= req.params.id;
 	Campground.findById(id).populate("comments").exec(function(err,foundCampground){
 		if(err){
-			console.log("Error");
+			console.log("Camp not Found: Error");
 		}
 		else {
-			console.log(foundCampground);
+			//console.log(foundCampground);
 			res.render("campgrounds/show",{campground:foundCampground});
 		}
 	});
