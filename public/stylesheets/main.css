@@ -18,13 +18,13 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #DDD;
+    color: #FFF;
 }
 
 .navbar-inverse .navbar-link {
-    color: #DDD;
+    color: #EEE;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #DDD;
+    color: #EEE;
 }
