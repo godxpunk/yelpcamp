@@ -1,4 +1,6 @@
-
+body {
+	background: #DDD
+}
 .thumbnail {
 	padding: 0;
 }
