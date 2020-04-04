@@ -17,6 +17,8 @@ var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes = require("./routes/index");
 
+var port = process.env.PORT || 3000;
+
 //seedDB; // seed the database
 //mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect("mongodb+srv://godxpunk:NEphilem12@cluster0-zxnej.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
@@ -54,7 +56,7 @@ app.use("/campgrounds",campgroundRoutes);
 
 
 
-app.listen(3000,function(){
+app.listen(port,function(){
 	console.log("YelpCamp server is running");
 });
 
