@@ -1,4 +1,6 @@
-<h1>YelpCamp </h1>
+<h2>
+<a href="https://yelpcamp-anand.herokuapp.com"> View YelpCamp App </>
+</h2>
 
 Yelpcamp is fully functional NodeJs web app.
 
@@ -14,7 +16,3 @@ The app has authentication feature, one can create/edit campgrounds he/she added
   modern applications
 - [Mongoose](https://mongoosejs.com/) - Elegant MongoDB object modeling for Node.js
 - [ejs](https://ejs.co/) - Embedded JavaScript templating
-
-<h2>
-<a href="https://yelpcamp-anand.herokuapp.com"> View YelpCamp App </>
-</h2>
